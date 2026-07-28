@@ -1,0 +1,40 @@
+name: Validate Copilot customizations
+
+on:
+  pull_request:
+    paths:
+      - ".github/**"
+      - ".vscode/**"
+      - "AGENTS.md"
+      - "scripts/validate_copilot_config.py"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/**"
+      - ".vscode/**"
+      - "AGENTS.md"
+      - "scripts/validate_copilot_config.py"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: copilot-customizations-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate files
+        run: python scripts/validate_copilot_config.py

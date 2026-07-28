@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "type": "command",
+        "command": "python scripts/validate_copilot_config.py"
+      }
+    ]
+  }
+}

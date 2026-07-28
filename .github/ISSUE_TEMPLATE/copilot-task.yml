@@ -1,0 +1,65 @@
+name: Copilot-ready task
+description: Requerimiento estructurado para Copilot Coding Agent o trabajo asistido.
+title: "[TASK] "
+labels:
+  - copilot-ready
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Completa contexto, criterios y límites. Un agente no debe inferir decisiones de producto críticas.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema y resultado esperado
+      description: Explica el problema observable y el resultado de negocio.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto técnico
+      description: Módulos, contratos, enlaces, decisiones y restricciones conocidas.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Criterios de aceptación verificables
+      placeholder: |
+        - Given...
+        - When...
+        - Then...
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Fuera de alcance
+      description: Cambios que no deben realizarse.
+  - type: textarea
+    id: security
+    attributes:
+      label: Seguridad, privacidad y cumplimiento
+      description: Datos sensibles, permisos, aislamiento, auditoría o riesgos.
+  - type: textarea
+    id: tests
+    attributes:
+      label: Pruebas esperadas
+      description: Unitarias, integración, UI, seguridad y regresión.
+  - type: textarea
+    id: operations
+    attributes:
+      label: Operación y rollback
+      description: Migraciones, configuración, observabilidad y reversión.
+  - type: checkboxes
+    id: ready
+    attributes:
+      label: Preparación
+      options:
+        - label: Los criterios son verificables.
+          required: true
+        - label: Las decisiones de producto críticas están resueltas.
+          required: true
+        - label: No se incluyeron secretos ni datos reales.
+          required: true

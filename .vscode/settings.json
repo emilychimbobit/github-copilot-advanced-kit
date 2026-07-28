@@ -1,0 +1,13 @@
+{
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  "chat.includeApplyingInstructions": true,
+  "chat.useAgentsMdFile": true,
+  "chat.useNestedAgentsMdFiles": false,
+  "chat.useCustomizationsInParentRepositories": true,
+  "github.copilot.chat.organizationInstructions.enabled": true,
+  "github.copilot.chat.organizationCustomAgents.enabled": true,
+  "chat.mcp.discovery.enabled": false,
+  "chat.agent.maxRequests": 35,
+  "chat.tools.global.autoApprove": false,
+  "chat.useCustomAgentHooks": false
+}

@@ -1,0 +1,27 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+secrets/
+.local/
+.mcp-secrets/
+
+# IDE and OS
+.DS_Store
+Thumbs.db
+.vs/
+.idea/
+
+# Build outputs
+bin/
+obj/
+node_modules/
+dist/
+coverage/
+TestResults/
+
+# Local reports
+copilot-validation-report.json

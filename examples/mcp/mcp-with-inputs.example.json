@@ -1,0 +1,19 @@
+{
+  "inputs": [
+    {
+      "id": "internal-mcp-token",
+      "type": "promptString",
+      "description": "Token temporal para el MCP interno",
+      "password": true
+    }
+  ],
+  "servers": {
+    "internal-api": {
+      "type": "http",
+      "url": "https://mcp.example.com",
+      "headers": {
+        "Authorization": "Bearer ${input:internal-mcp-token}"
+      }
+    }
+  }
+}

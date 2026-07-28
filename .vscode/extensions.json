@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    "GitHub.vscode-github-actions",
+    "ms-playwright.playwright"
+  ]
+}
