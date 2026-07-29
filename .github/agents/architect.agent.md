@@ -1,5 +1,5 @@
 ---
-name: Architect
+name: architect
 description: "Analiza el repositorio y produce planes técnicos, ADRs y decisiones sin modificar código."
 argument-hint: "Describe la funcionalidad, restricción o decisión arquitectónica."
 tools:

@@ -1,5 +1,5 @@
 ---
-name: GitHub Operator
+name: gitHub operator
 description: "Opera issues, branches y pull requests mediante GitHub MCP con confirmación para escrituras."
 argument-hint: "Describe la consulta u operación de GitHub."
 target: vscode

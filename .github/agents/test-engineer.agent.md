@@ -1,5 +1,5 @@
 ---
-name: Test Engineer
+name: test-engineer
 description: "Diseña, implementa y ejecuta pruebas sin alterar la lógica productiva salvo autorización."
 argument-hint: "Indica el comportamiento, diff o módulo que debe verificarse."
 tools:

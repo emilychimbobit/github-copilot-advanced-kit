@@ -1,5 +1,5 @@
 ---
-name: Documentation
+name: documentation
 description: "Crea y actualiza documentación técnica verificable sin modificar código productivo."
 argument-hint: "Indica la feature, API, proceso o documento."
 tools:
