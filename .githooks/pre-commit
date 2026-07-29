@@ -18,11 +18,13 @@ echo
 
 # 1. Validate Copilot configuration
 echo "📋 Validating Copilot configuration..."
-if python3 "$REPO_ROOT/scripts/validate_copilot_config.py" > /tmp/copilot_validation.txt 2>&1; then
+validation_tmp="$(mktemp -t copilot_validation.XXXXXX)"
+trap 'rm -f "$validation_tmp"' EXIT
+if python3 "$REPO_ROOT/scripts/validate_copilot_config.py" > "$validation_tmp" 2>&1; then
     echo -e "${GREEN}✓ Copilot configuration is valid${NC}"
 else
     echo -e "${RED}✗ Copilot configuration validation failed:${NC}"
-    cat /tmp/copilot_validation.txt
+    cat "$validation_tmp"
     EXIT_CODE=1
 fi
 echo
