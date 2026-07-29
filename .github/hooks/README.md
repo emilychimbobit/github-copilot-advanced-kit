@@ -13,3 +13,4 @@ Antes de moverlo a `.github/hooks/*.json`:
 3. prueba en un contenedor o repositorio desechable;
 4. habilita `chat.useCustomAgentHooks` únicamente si la política de la organización lo permite;
 5. evita descargar o ejecutar contenido no confiable.
+

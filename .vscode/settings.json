@@ -6,7 +6,12 @@
   "chat.useCustomizationsInParentRepositories": true,
   "github.copilot.chat.organizationInstructions.enabled": true,
   "github.copilot.chat.organizationCustomAgents.enabled": true,
-  "chat.mcp.discovery.enabled": false,
+  "chat.mcp.discovery.enabled": {
+    "claude-desktop": false,
+    "windsurf": false,
+    "cursor-global": false,
+    "cursor-workspace": false
+  },
   "chat.agent.maxRequests": 35,
   "chat.tools.global.autoApprove": false,
   "chat.useCustomAgentHooks": false
