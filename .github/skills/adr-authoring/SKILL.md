@@ -12,5 +12,5 @@ user-invocable: true
 3. Compare at least two viable options when they exist.
 4. Record why rejected options were not chosen.
 5. Include consequences, migration, security, operations and reversibility.
-6. Use the next sequential ADR number under `docs/adr`.
+6. Use the next sequential ADR number under `docs/adr` (run `python scripts/next_adr_number.py` to compute it; an optional disabled hook at `examples/hooks/adr-next-number.hooks.json.disabled` can validate numbering automatically after edits).
 7. Set status to `Proposed` until human approval.

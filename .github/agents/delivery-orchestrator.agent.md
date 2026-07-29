@@ -1,5 +1,5 @@
 ---
-name: Delivery Orchestrator
+name: delivery orchestrator
 description: "Orquesta análisis, arquitectura, implementación, pruebas y seguridad mediante subagentes."
 argument-hint: "Proporciona un issue o requerimiento con criterios de aceptación."
 tools:

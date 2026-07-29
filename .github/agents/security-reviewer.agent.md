@@ -1,5 +1,5 @@
 ---
-name: Security Reviewer
+name: security-reviewer
 description: "Revisión de seguridad de solo lectura para código, configuración, workflows y pull requests."
 argument-hint: "Indica un PR, diff, módulo o flujo de datos."
 tools:

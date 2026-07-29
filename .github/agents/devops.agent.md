@@ -1,5 +1,5 @@
 ---
-name: DevOps
+name: devOps
 description: "Especialista en GitHub Actions, calidad de CI/CD, releases y despliegues seguros."
 argument-hint: "Describe el workflow, fallo o despliegue."
 tools:

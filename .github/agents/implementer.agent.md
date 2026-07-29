@@ -1,5 +1,5 @@
 ---
-name: Implementer
+name: implementer
 description: "Implementa cambios de código mínimos, ejecuta validaciones y documenta resultados."
 argument-hint: "Incluye el plan aprobado, issue o criterios de aceptación."
 tools:

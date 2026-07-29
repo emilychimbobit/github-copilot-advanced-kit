@@ -6,7 +6,17 @@
   "chat.useCustomizationsInParentRepositories": true,
   "github.copilot.chat.organizationInstructions.enabled": true,
   "github.copilot.chat.organizationCustomAgents.enabled": true,
-  "chat.mcp.discovery.enabled": false,
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "Siempre sigue Conventional Commits + Git Flow. Formato: tipo(scope): descripción. Tipos permitidos: feat, fix, docs, style, refactor, test, chore. Reglas: minúsculas, tiempo imperativo (agrega/corrige/actualiza, no agregado/corregido), máximo 72 caracteres. Escribe siempre en español. Ejemplo: feat(auth): agregar endpoint de login, fix(api): corregir manejo de respuesta nula"
+    }
+  ],
+  "chat.mcp.discovery.enabled": {
+    "claude-desktop": false,
+    "windsurf": false,
+    "cursor-global": false,
+    "cursor-workspace": false
+  },
   "chat.agent.maxRequests": 35,
   "chat.tools.global.autoApprove": false,
   "chat.useCustomAgentHooks": false
