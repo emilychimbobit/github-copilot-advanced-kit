@@ -1,0 +1,11 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "type": "command",
+        "matcher": "docs/adr/*.md",
+        "command": "python scripts/next_adr_number.py --check"
+      }
+    ]
+  }
+}
