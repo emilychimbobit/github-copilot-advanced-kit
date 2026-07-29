@@ -5,7 +5,7 @@ param(
     [switch]$Force
 )
 
-$RepoRoot = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
+$RepoRoot = Split-Path -Parent $PSScriptRoot
 $HooksDir = Join-Path $RepoRoot ".githooks"
 
 Write-Host "Installing pre-commit hooks..." -ForegroundColor Cyan
