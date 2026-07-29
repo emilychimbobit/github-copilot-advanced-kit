@@ -1,4 +1,4 @@
-# GitHub Copilot Advanced Kit
+# GitHub Copilot Advanced Kit 
 
 Repositorio plantilla para implementar una configuración avanzada, auditable y reutilizable de GitHub Copilot en Visual Studio Code y GitHub.
 
