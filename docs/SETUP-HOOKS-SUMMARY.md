@@ -104,14 +104,12 @@ git commit -m "test: pre-commit hook installation"
 
 ## ⚙️ Configuration
 
-Git has been configured to use `.githooks` directory:
-```bash
-git config core.hooksPath
-# Output: .githooks
-```
+After running the installation script (or configuring manually), Git will be set to use the `.githooks` directory:
 
-This configuration is stored in `.git/config`.
+    git config core.hooksPath
+    # Output: .githooks
 
+This setting is stored per-clone in `.git/config` (it is not committed to the repository).
 ## 🔄 Workflow Integration
 
 The pre-commit hook:
